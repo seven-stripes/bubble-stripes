@@ -102,14 +102,18 @@ wykorzystuje informacje z aplikacji partnerów</a> oraz
 </ul>
 
 <h3>Bez internetu</h3>
-<p>Bez internetu gra działa w całości, ale nie pokazuje reklam, więc nie da się też dostać
-nagród za reklamy. Pakiet AdMob niczego wtedy nie wysyła.</p>
+<p>Bez internetu gra działa w całości. Nowe reklamy się wtedy nie pobierają, ale reklamę pobraną
+wcześniej, gdy był internet, możesz obejrzeć i dostać za nią nagrodę. Informacje o takim
+wyświetleniu pakiet AdMob może przekazać Google, gdy internet wróci.</p>
 
 <h2>Uprawnienia</h2>
 <p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę), z identyfikatora
 reklamowego oraz z systemowych usług reklamowych Androida (tematy reklam, pomiar skuteczności
-reklam). Z tych uprawnień korzysta wyłącznie pakiet AdMob; tematy reklam i identyfikator
-reklamowy wyłączysz w ustawieniach Androida. Gra nie ma dostępu do kontaktów, lokalizacji GPS,
+reklam). Biblioteki Google, których używa pakiet AdMob (pomiar reklam i planowanie zadań w tle),
+korzystają też z dwóch uprawnień technicznych: podtrzymania działania urządzenia na chwilę
+(„wake lock”) i krótkich zadań w tle („foreground service”), żeby dokończyć przesyłanie danych
+o reklamach. Z tych uprawnień korzysta wyłącznie pakiet AdMob i jego biblioteki; tematy reklam
+i identyfikator reklamowy wyłączysz w ustawieniach Androida. Gra nie ma dostępu do kontaktów, lokalizacji GPS,
 aparatu, mikrofonu ani plików.</p>
 
 <h2>Dzieci</h2>
@@ -167,13 +171,17 @@ launch. You can accept personalised ads or refuse — ads may still appear, with
 (Settings → Google → Ads).</p>
 
 <h3>Offline</h3>
-<p>Without internet the game works fully but shows no ads, so rewards for ads are not available
-either. The AdMob SDK sends nothing then.</p>
+<p>Without internet the game works fully. No new ads are downloaded then, but an ad downloaded
+earlier, while you were online, can still be watched for its reward. The AdMob SDK may pass
+information about that view to Google once you are back online.</p>
 
 <h3>Permissions</h3>
 <p>The game uses internet and network-state access (to load an ad), the advertising ID and
-Android's ad services (ad topics, ad measurement). Only the AdMob SDK uses these permissions; you
-can turn off ad topics and the advertising ID in Android settings. The game has no access to
+Android's ad services (ad topics, ad measurement). The Google libraries the AdMob SDK relies on
+(ad measurement and background task scheduling) also use two technical permissions: keeping the
+device awake briefly ("wake lock") and short background work ("foreground service"), to finish
+sending ad data. Only the AdMob SDK and its libraries use these permissions; you can turn off ad
+topics and the advertising ID in Android settings. The game has no access to
 contacts, GPS location, camera, microphone or files.</p>
 
 <h3>Children</h3>
