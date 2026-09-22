@@ -52,7 +52,7 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 15 września 2026 / effective 15 September 2026</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 22 września 2026 / effective 22 September 2026</p>
 </header>
 
 <main>
@@ -62,8 +62,11 @@
 wyłącznie na Twoim urządzeniu.</strong> Gra pokazuje <strong>reklamy nagradzane</strong>:
 reklama pojawia się tylko wtedy, gdy sam ją wybierzesz, żeby dostać nagrodę (na przykład
 życie). Reklamy dostarcza <strong>Google AdMob</strong>, który przy tym zbiera określone dane
-o urządzeniu — opisujemy je niżej. My sami nie zbieramy o Tobie żadnych danych i nie mamy
-własnego serwera.</p>
+o urządzeniu. Gra zbiera też <strong>statystyki rozgrywki</strong> przez usługę
+<strong>Google Analytics dla Firebase</strong>: ile osób wraca do gry, które poziomy są za trudne,
+ile propozycji reklamy kończy się obejrzeniem. Statystyki nie zawierają Twojego imienia, adresu
+e-mail ani identyfikatora reklamowego, a w Europie zbieramy je tylko za Twoją zgodą. Wszystko
+opisujemy niżej. Nie mamy własnego serwera.</p>
 
 <h2>Co gra zapisuje na Twoim urządzeniu</h2>
 <p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych, liczbę żyć
@@ -95,7 +98,7 @@ wykorzystuje informacje z aplikacji partnerów</a> oraz
   <li>Jeśli jesteś w Europejskim Obszarze Gospodarczym, Wielkiej Brytanii lub Szwajcarii, przy
   pierwszym uruchomieniu gra pokaże formularz zgody Google. Możesz zgodzić się na reklamy
   spersonalizowane albo odmówić — wtedy reklamy nadal mogą się wyświetlać, ale bez personalizacji
-  (reklamy ograniczone).</li>
+  (reklamy ograniczone). Ten sam formularz pyta o zgodę na statystyki (niżej).</li>
   <li>Wybór zmienisz w każdej chwili w menu gry: <strong>„Prywatność reklam”</strong>.</li>
   <li>Identyfikator reklamowy zresetujesz lub usuniesz w ustawieniach Androida
   (Ustawienia → Google → Reklamy).</li>
@@ -104,7 +107,60 @@ wykorzystuje informacje z aplikacji partnerów</a> oraz
 <h3>Bez internetu</h3>
 <p>Bez internetu gra działa w całości. Nowe reklamy się wtedy nie pobierają, ale reklamę pobraną
 wcześniej, gdy był internet, możesz obejrzeć i dostać za nią nagrodę. Informacje o takim
-wyświetleniu pakiet AdMob może przekazać Google, gdy internet wróci.</p>
+wyświetleniu pakiet AdMob może przekazać Google, gdy internet wróci. Statystyki gry też czekają
+na internet i wysyłają się później.</p>
+
+<h2>Statystyki gry (Google Analytics dla Firebase)</h2>
+<p>Żeby wiedzieć, czy gra się podoba i gdzie jest za trudna, gra wysyła statystyki do usługi
+Google Analytics dla Firebase. Robimy to my, Seven Stripes; Google przetwarza te dane w naszym
+imieniu.</p>
+<table>
+  <tr><th>Co</th><th>Szczegóły</th></tr>
+  <tr><td>Losowy identyfikator tej instalacji gry</td><td>nadawany przy pierwszym uruchomieniu; to nie
+  jest identyfikator reklamowy ani numer telefonu; znika po odinstalowaniu gry albo wyczyszczeniu jej
+  danych</td></tr>
+  <tr><td>Uruchomienia i czas gry</td><td>pierwsze uruchomienie, kolejne sesje, aktualizacje gry</td></tr>
+  <tr><td>Przebieg rozgrywki</td><td>rozpoczęcie i koniec poziomu (numer poziomu, tryb gry, wygrana,
+  przegrana albo wyjście, powód, liczba strzałów, czas), koniec wyzwania dnia (z serią dni),
+  miejsce dodane do albumu</td></tr>
+  <tr><td>Reklamy</td><td>że pojawiła się propozycja reklamy i jakiej nagrody dotyczyła, że reklama
+  została obejrzana do końca, a także wyświetlenia reklam i przychód z nich (z Google AdMob)</td></tr>
+  <tr><td>Urządzenie</td><td>model, wersja Androida, wersja gry, język</td></tr>
+  <tr><td>Przybliżona lokalizacja</td><td>kraj, region i miasto wyliczone z adresu IP; samego adresu
+  IP Google Analytics nie przechowuje</td></tr>
+  <tr><td>Źródło instalacji</td><td>skąd gra trafiła na urządzenie (na przykład wyszukiwanie w Sklepie
+  Google Play), odczytywane ze Sklepu Play</td></tr>
+</table>
+<p><strong>Czego nie zbieramy:</strong> imienia, adresu e-mail, numeru telefonu, identyfikatora
+reklamowego (w statystykach jest wyłączony), dokładnej lokalizacji, kontaktów ani niczego, co
+wpisujesz. Nie łączymy statystyk z Twoim kontem Google (funkcja Google Signals jest wyłączona).</p>
+<p><strong>Po co:</strong> żeby poprawiać grę: mierzyć, ile osób wraca po dniu i po tygodniu, które
+poziomy są za trudne i czy reklamy nie przeszkadzają. Nie sprzedajemy tych danych i nie używamy ich
+do reklam kierowanych do Ciebie.</p>
+
+<h3>Zgoda na statystyki</h3>
+<ul>
+  <li>W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii statystyki z identyfikatorem
+  instalacji zbieramy <strong>tylko za Twoją zgodą</strong>, wyrażoną w tym samym formularzu Google,
+  który gra pokazuje przy pierwszym uruchomieniu. Zmienisz ją w każdej chwili w menu gry:
+  <strong>„Prywatność reklam”</strong>.</li>
+  <li>Dopóki zgody nie ma, gra może wysyłać do Google zdarzenia <strong>bez żadnego identyfikatora
+  urządzenia ani użytkownika</strong>. Google używa ich wyłącznie zbiorczo, do szacowania statystyk
+  (tak działa „tryb uzyskiwania zgody” Google). Takich zdarzeń nie da się powiązać z Twoim
+  urządzeniem.</li>
+  <li>Poza tymi krajami statystyki działają od pierwszego uruchomienia. Powiązanie z Tobą przerwiesz,
+  usuwając dane gry w ustawieniach Androida albo odinstalowując grę: dostaniesz wtedy nowy, losowy
+  identyfikator.</li>
+</ul>
+
+<h3>Jak długo i gdzie</h3>
+<p>Dane statystyk są przechowywane <strong>14 miesięcy</strong>, potem Google je usuwa. Zostają
+tylko zbiorcze liczby (na przykład „ile osób wróciło po tygodniu”), których nie da się powiązać
+z nikim. Dane są szyfrowane podczas przesyłania. Google może je przetwarzać także poza Europejskim
+Obszarem Gospodarczym, na podstawie zabezpieczeń przewidzianych w RODO (standardowe klauzule umowne,
+Ramy ochrony danych UE–USA). Zasady Google:
+<a href="https://support.google.com/analytics/answer/6004245">ochrona danych w Google Analytics</a>
+i <a href="https://firebase.google.com/support/privacy">prywatność i bezpieczeństwo w Firebase</a>.</p>
 
 <h2>Sprawdzanie aktualizacji</h2>
 <p>Gdy gra się uruchamia, pyta Sklep Google Play, czy jest jej nowsza wersja. Robi to biblioteka
@@ -116,14 +172,15 @@ przyjmiesz, pobiera się w tle, a gra prosi o ponowne uruchomienie. Bez internet
 zainstalowanej spoza Sklepu Play, nic się nie sprawdza.</p>
 
 <h2>Uprawnienia</h2>
-<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę i sprawdzić, czy jest aktualizacja), z identyfikatora
-reklamowego oraz z systemowych usług reklamowych Androida (tematy reklam, pomiar skuteczności
-reklam). Biblioteki Google, których używa pakiet AdMob (pomiar reklam i planowanie zadań w tle),
-korzystają też z dwóch uprawnień technicznych: podtrzymania działania urządzenia na chwilę
-(„wake lock”) i krótkich zadań w tle („foreground service”), żeby dokończyć przesyłanie danych
-o reklamach. Z tych uprawnień korzysta wyłącznie pakiet AdMob i jego biblioteki; tematy reklam
-i identyfikator reklamowy wyłączysz w ustawieniach Androida. Gra nie ma dostępu do kontaktów, lokalizacji GPS,
-aparatu, mikrofonu ani plików.</p>
+<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki
+i sprawdzić, czy jest aktualizacja), z identyfikatora reklamowego oraz z systemowych usług
+reklamowych Androida (tematy reklam, pomiar skuteczności reklam). Biblioteki Google (pomiar reklam
+i statystyk, planowanie zadań w tle) korzystają też z dwóch uprawnień technicznych: podtrzymania
+działania urządzenia na chwilę („wake lock”) i krótkich zadań w tle („foreground service”), żeby
+dokończyć przesyłanie danych. Statystyki odczytują ze Sklepu Google Play źródło instalacji gry
+(uprawnienie „install referrer”). Z tych uprawnień korzystają wyłącznie biblioteki Google; tematy
+reklam i identyfikator reklamowy wyłączysz w ustawieniach Androida. Gra nie ma dostępu do
+kontaktów, lokalizacji GPS, aparatu, mikrofonu ani plików.</p>
 
 <h2>Dzieci</h2>
 <p>Gra nie jest skierowana do dzieci poniżej 13 lat. Reklamy w grze są ograniczone do treści
@@ -137,10 +194,20 @@ napiszesz, przechowujemy Twoją wiadomość i adres wyłącznie po to, żeby odp
 o listę testerów — żeby wysłać Ci zaproszenie do testów kolejnych gier. Wypisanie się albo usunięcie
 adresu: napisz na ten sam adres, robimy to od ręki. Nie przekazujemy tych adresów nikomu.</p>
 
+<h2>Twoje prawa</h2>
+<p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia
+i sprzeciwu. Zgodę możesz wycofać w każdej chwili (menu gry, „Prywatność reklam”); wycofanie nie
+zmienia tego, co zebrano wcześniej. Statystyki nie zawierają nic, po czym moglibyśmy Cię rozpoznać,
+więc zwykle nie potrafimy wskazać „Twoich” danych; najprostsza droga to usunięcie danych gry albo jej
+odinstalowanie. W sprawie swoich danych napisz do nas (adres niżej). Możesz też złożyć skargę do
+Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
+
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
-<strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają dostępne: <a href="2026-09-14.html">z 14 września 2026</a> (sprzed
-sprawdzania aktualizacji) i <a href="2026-09-07.html">z 7 września 2026</a> (sprzed reklam).</p>
+<strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
+dostępne: <a href="2026-09-15.html">z 15 września 2026</a> (sprzed statystyk),
+<a href="2026-09-14.html">z 14 września 2026</a> (sprzed sprawdzania aktualizacji)
+i <a href="2026-09-07.html">z 7 września 2026</a> (sprzed reklam).</p>
 
 <h2>Kontakt</h2>
 <p>Pytania o prywatność: <a href="mailto:sevenstripesgames@gmail.com">sevenstripesgames@gmail.com</a></p>
@@ -153,8 +220,11 @@ sprawdzania aktualizacji) i <a href="2026-09-07.html">z 7 września 2026</a> (sp
 <p>Bubble Stripes is a free game with no accounts and no sign-in. <strong>Your game progress is
 saved only on your device.</strong> The game shows <strong>rewarded ads</strong>: an ad appears only
 when you choose to watch one for a reward (for example, a life). Ads are provided by
-<strong>Google AdMob</strong>, which collects certain device data in doing so — described below.
-We ourselves collect no data about you and run no server of our own.</p>
+<strong>Google AdMob</strong>, which collects certain device data in doing so. The game also
+collects <strong>gameplay statistics</strong> through <strong>Google Analytics for Firebase</strong>:
+how many people come back, which levels are too hard, how many ad offers end in a watched ad. The
+statistics contain no name, email address or advertising ID, and in Europe we collect them only
+with your consent. Everything is described below. We run no server of our own.</p>
 
 <h3>What the game saves on your device</h3>
 <p>Your progress: level number, scores, records, stars, power-up stock, number of lives and the time
@@ -175,14 +245,50 @@ sites or apps that use its services</a> and the
 <h3>Consent and how to change it</h3>
 <p>In the European Economic Area, the UK and Switzerland the game shows Google's consent form on first
 launch. You can accept personalised ads or refuse — ads may still appear, without personalisation
-(limited ads). You can change your choice at any time in the game menu under
-<strong>"Ad privacy"</strong>. You can reset or delete your advertising ID in Android settings
-(Settings → Google → Ads).</p>
+(limited ads). The same form asks for consent to statistics (below). You can change your choice at
+any time in the game menu under <strong>"Ad privacy"</strong>. You can reset or delete your
+advertising ID in Android settings (Settings → Google → Ads).</p>
 
 <h3>Offline</h3>
 <p>Without internet the game works fully. No new ads are downloaded then, but an ad downloaded
 earlier, while you were online, can still be watched for its reward. The AdMob SDK may pass
-information about that view to Google once you are back online.</p>
+information about that view to Google once you are back online. Game statistics also wait for the
+internet and are sent later.</p>
+
+<h3>Game statistics (Google Analytics for Firebase)</h3>
+<p>To know whether the game is enjoyed and where it is too hard, the game sends statistics to
+Google Analytics for Firebase. We, Seven Stripes, do this; Google processes the data on our behalf.
+What is sent: <strong>a random identifier of this installation of the game</strong> (assigned on first
+launch; not the advertising ID or any phone number; gone when you uninstall the game or clear its
+data), <strong>launches and play time</strong> (first launch, sessions, game updates),
+<strong>gameplay</strong> (start and end of a level with level number, game mode, won, lost or left,
+reason, number of shots and time; end of the daily challenge with the day streak; a place added to
+the album), <strong>ads</strong> (that an ad offer appeared and for which reward, that an ad was
+watched to the end, plus ad impressions and their revenue from Google AdMob),
+<strong>device</strong> (model, Android version, game version, language),
+<strong>approximate location</strong> (country, region and city derived from the IP address; Google
+Analytics does not store the IP address itself) and the <strong>install source</strong> (how the game
+reached the device, e.g. a Google Play search), read from the Play Store.</p>
+<p><strong>Not collected:</strong> your name, email address, phone number, advertising ID (turned off
+for statistics), precise location, contacts or anything you type. Statistics are not linked to your
+Google account (Google Signals is off). <strong>Purpose:</strong> improving the game - measuring how
+many people return after a day and after a week, which levels are too hard and whether the ads get
+in the way. We do not sell this data or use it to target ads at you.</p>
+<p><strong>Consent.</strong> In the European Economic Area, the UK and Switzerland, statistics with the
+installation identifier are collected <strong>only with your consent</strong>, given in the same Google
+form the game shows on first launch; change it at any time under <strong>"Ad privacy"</strong> in the
+game menu. Until you consent, the game may send Google events <strong>with no device or user
+identifier</strong>, which Google uses only in aggregate to estimate statistics (Google's "consent
+mode"); they cannot be linked to your device. Elsewhere, statistics work from the first launch; you
+break the link by clearing the game's data in Android settings or uninstalling the game - you then
+get a new random identifier.</p>
+<p><strong>How long and where.</strong> Statistics data is kept for <strong>14 months</strong>, then
+Google deletes it; only aggregate figures that cannot be linked to anyone remain. The data is
+encrypted in transit. Google may process it outside the European Economic Area under the safeguards
+of the GDPR (standard contractual clauses, the EU-US Data Privacy Framework). Google's terms:
+<a href="https://support.google.com/analytics/answer/6004245">safeguarding your data in Google
+Analytics</a> and <a href="https://firebase.google.com/support/privacy">privacy and security in
+Firebase</a>.</p>
 
 <h3>Update check</h3>
 <p>When the game starts, it asks the Google Play Store whether a newer version exists. This is done
@@ -194,13 +300,14 @@ downloads in the background and the game asks you to restart it. Offline, or in 
 not installed from the Play Store, nothing is checked.</p>
 
 <h3>Permissions</h3>
-<p>The game uses internet and network-state access (to load an ad and to check for an update), the advertising ID and
-Android's ad services (ad topics, ad measurement). The Google libraries the AdMob SDK relies on
-(ad measurement and background task scheduling) also use two technical permissions: keeping the
-device awake briefly ("wake lock") and short background work ("foreground service"), to finish
-sending ad data. Only the AdMob SDK and its libraries use these permissions; you can turn off ad
-topics and the advertising ID in Android settings. The game has no access to
-contacts, GPS location, camera, microphone or files.</p>
+<p>The game uses internet and network-state access (to load an ad, send statistics and check for an
+update), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
+(ad and statistics measurement, background task scheduling) also use two technical permissions:
+keeping the device awake briefly ("wake lock") and short background work ("foreground service"), to
+finish sending data. Statistics read the game's install source from the Google Play Store ("install
+referrer" permission). Only Google's libraries use these permissions; you can turn off ad topics and
+the advertising ID in Android settings. The game has no access to contacts, GPS location, camera,
+microphone or files.</p>
 
 <h3>Children</h3>
 <p>The game is not directed at children under 13. Ads in the game are limited to content suitable
@@ -214,10 +321,21 @@ write, we keep your message and address solely to reply, and - if you asked for 
 invite you to test the next games. To be removed, write to the same address; we do it straight away.
 We never pass these addresses to anyone.</p>
 
+<h3>Your rights</h3>
+<p>You have the right to access, rectify and erase your data, to restrict and object to its
+processing and to data portability, and you can withdraw consent at any time (game menu, "Ad
+privacy"); withdrawal does not affect what was collected before. Statistics contain nothing we could
+recognise you by, so we are usually unable to point to "your" data; the simplest route is to clear
+the game's data or uninstall it. For anything about your data, write to us (address below). You may
+also lodge a complaint with a data protection authority - in Poland, the President of the Personal
+Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
+
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
-<strong>before</strong> the game version it concerns is released. Earlier versions remain available: <a href="2026-09-14.html">14 September 2026</a> (before the
-update check) and <a href="2026-09-07.html">7 September 2026</a> (before ads).</p>
+<strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-09-15.html">15 September 2026</a> (before statistics),
+<a href="2026-09-14.html">14 September 2026</a> (before the update check) and
+<a href="2026-09-07.html">7 September 2026</a> (before ads).</p>
 
 <h3>Contact</h3>
 <p>Privacy questions: <a href="mailto:sevenstripesgames@gmail.com">sevenstripesgames@gmail.com</a></p>
