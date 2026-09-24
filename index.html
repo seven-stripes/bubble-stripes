@@ -52,7 +52,7 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 22 września 2026 / effective 22 September 2026</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 25 września 2026 / effective 25 September 2026</p>
 </header>
 
 <main>
@@ -70,7 +70,9 @@ opisujemy niżej. Nie mamy własnego serwera.</p>
 
 <h2>Co gra zapisuje na Twoim urządzeniu</h2>
 <p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych, liczbę żyć
-i czas odnowienia następnego życia, oraz ustawienia (dźwięk, muzyka, język). Ten plik:</p>
+i czas odnowienia następnego życia, zegar gry, dni wyzwania dnia czekające na sprawdzenie daty (z chwilą
+ich rozpoczęcia według licznika czasu od włączenia telefonu), oraz ustawienia (dźwięk, muzyka, język).
+Ten plik:</p>
 <ul>
   <li>znajduje się w prywatnej pamięci aplikacji na Twoim urządzeniu,</li>
   <li>nigdy nie jest wysyłany do nas,</li>
@@ -171,9 +173,17 @@ okresie przechowywania. Gdy aktualizacja jest dostępna, Google Play pokazuje sw
 przyjmiesz, pobiera się w tle, a gra prosi o ponowne uruchomienie. Bez internetu, a także w grze
 zainstalowanej spoza Sklepu Play, nic się nie sprawdza.</p>
 
+<h2>Sprawdzanie daty</h2>
+<p>Żeby seria dni w wyzwaniu dnia i odnawianie żyć były uczciwe, gra nie wierzy dacie ustawionej
+w telefonie. Gdy jest internet, pyta serwer Google (www.google.com) o aktualną datę i godzinę: wysyła
+puste zapytanie i czyta z odpowiedzi wyłącznie datę. Nie przesyła żadnych danych z gry ani
+identyfikatorów; jak przy każdym połączeniu z internetem, serwer widzi adres IP urządzenia. Bez
+internetu gra liczy czas sama, na własnym zegarze, a dni wyzwania zagrane offline dolicza do serii
+po powrocie do sieci.</p>
+
 <h2>Uprawnienia</h2>
-<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki
-i sprawdzić, czy jest aktualizacja), z identyfikatora reklamowego oraz z systemowych usług
+<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki,
+sprawdzić, czy jest aktualizacja, i sprawdzić datę), z identyfikatora reklamowego oraz z systemowych usług
 reklamowych Androida (tematy reklam, pomiar skuteczności reklam). Biblioteki Google (pomiar reklam
 i statystyk, planowanie zadań w tle) korzystają też z dwóch uprawnień technicznych: podtrzymania
 działania urządzenia na chwilę („wake lock”) i krótkich zadań w tle („foreground service”), żeby
@@ -205,7 +215,8 @@ Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-09-15.html">z 15 września 2026</a> (sprzed statystyk),
+dostępne: <a href="2026-09-22.html">z 22 września 2026</a> (sprzed sprawdzania daty),
+<a href="2026-09-15.html">z 15 września 2026</a> (sprzed statystyk),
 <a href="2026-09-14.html">z 14 września 2026</a> (sprzed sprawdzania aktualizacji)
 i <a href="2026-09-07.html">z 7 września 2026</a> (sprzed reklam).</p>
 
@@ -228,7 +239,8 @@ with your consent. Everything is described below. We run no server of our own.</
 
 <h3>What the game saves on your device</h3>
 <p>Your progress: level number, scores, records, stars, power-up stock, number of lives and the time
-the next life returns, plus settings (sound, music, language). That file lives in the app's private
+the next life returns, the game's clock, daily challenge days waiting for the date check (with the moment
+each began by the phone's time-since-start counter), plus settings (sound, music, language). That file lives in the app's private
 storage on your device, is never sent to us, and is deleted entirely when you uninstall the game.</p>
 
 <h3>Ads and data collected by Google AdMob</h3>
@@ -299,9 +311,17 @@ retention period. When an update is available, Google Play shows its own window;
 downloads in the background and the game asks you to restart it. Offline, or in a copy of the game
 not installed from the Play Store, nothing is checked.</p>
 
+<h3>Date check</h3>
+<p>To keep the daily challenge streak and the refilling of lives fair, the game does not trust the date
+set on the phone. With internet access it asks a Google server (www.google.com) for the current date
+and time: it sends an empty request and reads only the date from the answer. No game data and no
+identifiers are sent; as with any internet connection, the server sees the device's IP address.
+Offline, the game keeps time on its own clock, and daily challenge days played offline count towards
+the streak once you are back online.</p>
+
 <h3>Permissions</h3>
-<p>The game uses internet and network-state access (to load an ad, send statistics and check for an
-update), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
+<p>The game uses internet and network-state access (to load an ad, send statistics, check for an
+update and check the date), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
 (ad and statistics measurement, background task scheduling) also use two technical permissions:
 keeping the device awake briefly ("wake lock") and short background work ("foreground service"), to
 finish sending data. Statistics read the game's install source from the Google Play Store ("install
@@ -333,6 +353,7 @@ Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
 <strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-09-22.html">22 September 2026</a> (before the date check),
 <a href="2026-09-15.html">15 September 2026</a> (before statistics),
 <a href="2026-09-14.html">14 September 2026</a> (before the update check) and
 <a href="2026-09-07.html">7 September 2026</a> (before ads).</p>
