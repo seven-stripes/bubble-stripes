@@ -52,14 +52,16 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 25 września 2026 (wersja 6) / effective 25 September 2026 (version 6)</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 2 października 2026 (wersja 7) / effective 2 October 2026 (version 7)</p>
 </header>
 
 <main>
 
 <h2>Krótko</h2>
-<p>Bubble Stripes to darmowa gra bez kont i bez logowania. <strong>Postęp gry zapisuje się
-wyłącznie na Twoim urządzeniu.</strong> Gra pokazuje <strong>reklamy nagradzane</strong>:
+<p>Bubble Stripes to darmowa gra bez własnych kont. <strong>Postęp gry zapisuje się na Twoim
+urządzeniu.</strong> Jeśli jesteś zalogowany do <strong>Gier Google Play</strong>, Google trzyma też
+<strong>kopię Twojego postępu w chmurze</strong> i Twój wynik w <strong>rankingu graczy</strong>
+(szczegóły niżej). Gra pokazuje <strong>reklamy nagradzane</strong>:
 reklama pojawia się tylko wtedy, gdy sam ją wybierzesz, żeby dostać nagrodę (na przykład
 życie). Reklamy dostarcza <strong>Google AdMob</strong>, który przy tym zbiera określone dane
 o urządzeniu. Gra zbiera też <strong>statystyki rozgrywki</strong> przez usługę
@@ -76,7 +78,8 @@ Ten plik:</p>
 <ul>
   <li>znajduje się w prywatnej pamięci aplikacji na Twoim urządzeniu,</li>
   <li>nigdy nie jest wysyłany do nas,</li>
-  <li>znika w całości, gdy odinstalujesz grę.</li>
+  <li>znika w całości, gdy odinstalujesz grę — chyba że włączona jest kopia w chmurze Gier Google
+  Play: wtedy jego kopia zostaje w Twoim koncie Google, dopóki jej nie usuniesz (niżej).</li>
 </ul>
 
 <h2>Reklamy i dane zbierane przez Google AdMob</h2>
@@ -164,6 +167,38 @@ Ramy ochrony danych UE–USA). Zasady Google:
 <a href="https://support.google.com/analytics/answer/6004245">ochrona danych w Google Analytics</a>
 i <a href="https://firebase.google.com/support/privacy">prywatność i bezpieczeństwo w Firebase</a>.</p>
 
+<h2>Gry Google Play: ranking i kopia w chmurze</h2>
+<p>Gra korzysta z usługi <strong>Gry Google Play</strong> (Google Play Games Services), żeby prowadzić
+<strong>ranking graczy</strong> i trzymać <strong>kopię Twojego postępu w chmurze Google</strong>: po
+wyczyszczeniu danych gry, ponownej instalacji albo na nowym telefonie Twoja kariera wraca. Działa to
+tylko wtedy, gdy jesteś zalogowany do Gier Google Play:</p>
+<ul>
+  <li>Przy uruchomieniu gry Google loguje Cię sam, jeśli masz profil Gier Google Play. Jeśli go nie
+  masz, Google może zaproponować jego założenie w swoim okienku. Możesz odmówić i grać dalej bez
+  rankingu i bez kopii w chmurze.</li>
+  <li>Kopia w chmurze jest domyślnie włączona. Wyłączysz ją w ustawieniach gry:
+  <strong>„Kopia w chmurze”</strong>. Ranking otwierasz sam, przyciskiem na ekranie
+  <strong>„Punkty”</strong>.</li>
+</ul>
+<table>
+  <tr><th>Dane</th><th>Szczegóły</th></tr>
+  <tr><td>Profil gracza</td><td>identyfikator gracza, pseudonim i awatar z Twojego profilu Gier Google
+  Play; ustawiasz je w Google, nie w grze</td></tr>
+  <tr><td>Wynik w rankingu</td><td>suma punktów zdobytych w grze; widzą go inni gracze razem z Twoim
+  pseudonimem, zgodnie z ustawieniami widoczności Twojego profilu Gier Google Play</td></tr>
+  <tr><td>Kopia postępu</td><td>ten sam plik postępu, który gra trzyma na urządzeniu (opisany wyżej),
+  razem z numerem poziomu; przechowywany w Twoim koncie Google, w ukrytym folderze danych aplikacji
+  na Dysku Google</td></tr>
+  <tr><td>Analityka i diagnostyka</td><td>dane, które biblioteka Gier Google Play zbiera według Google,
+  żeby działać stabilnie</td></tr>
+</table>
+<p>Dane przetwarza Google na swoich zasadach (<a href="https://policies.google.com/privacy">polityka
+prywatności Google</a>); są szyfrowane podczas przesyłania. My nie mamy do nich innego dostępu niż
+Ty: gra czyta tylko kopię Twojego własnego postępu i wysyła swój wynik. Nie mamy własnego serwera.
+<strong>Usunięcie:</strong> profil, wyniki i kopie postępu usuniesz w aplikacji Gry Google Play
+(profil → ustawienia → usuń konto Gier Google Play i dane) albo na
+<a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
+
 <h2>Sprawdzanie aktualizacji</h2>
 <p>Gdy gra się uruchamia, pyta Sklep Google Play, czy jest jej nowsza wersja. Robi to biblioteka
 Google Play do aktualizacji w aplikacji: przesyła do Google informacje o urządzeniu, wersję gry
@@ -191,7 +226,7 @@ po powrocie do sieci.</p>
 
 <h2>Uprawnienia</h2>
 <p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki,
-sprawdzić, czy jest aktualizacja, i sprawdzić datę), z identyfikatora reklamowego oraz z systemowych usług
+sprawdzić, czy jest aktualizacja, sprawdzić datę oraz połączyć się z Grami Google Play), z identyfikatora reklamowego oraz z systemowych usług
 reklamowych Androida (tematy reklam, pomiar skuteczności reklam). Biblioteki Google (pomiar reklam
 i statystyk, planowanie zadań w tle) korzystają też z dwóch uprawnień technicznych: podtrzymania
 działania urządzenia na chwilę („wake lock”) i krótkich zadań w tle („foreground service”), żeby
@@ -217,13 +252,15 @@ adresu: napisz na ten sam adres, robimy to od ręki. Nie przekazujemy tych adres
 i sprzeciwu. Zgodę możesz wycofać w każdej chwili (menu gry, „Prywatność reklam”); wycofanie nie
 zmienia tego, co zebrano wcześniej. Statystyki nie zawierają nic, po czym moglibyśmy Cię rozpoznać,
 więc zwykle nie potrafimy wskazać „Twoich” danych; najprostsza droga to usunięcie danych gry albo jej
-odinstalowanie. W sprawie swoich danych napisz do nas (adres niżej). Możesz też złożyć skargę do
+odinstalowanie. Dane Gier Google Play (profil, wyniki, kopie postępu) usuwasz sam, w aplikacji Gry
+Google Play albo na koncie Google (wyżej). W sprawie swoich danych napisz do nas (adres niżej). Możesz też złożyć skargę do
 Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-09-25.html">z 25 września 2026, wersja 5</a> (sprzed prośby o ocenę),
+dostępne: <a href="2026-09-25-v6.html">z 25 września 2026, wersja 6</a> (sprzed Gier Google Play),
+<a href="2026-09-25.html">z 25 września 2026, wersja 5</a> (sprzed prośby o ocenę),
 <a href="2026-09-22.html">z 22 września 2026</a> (sprzed sprawdzania daty),
 <a href="2026-09-15.html">z 15 września 2026</a> (sprzed statystyk),
 <a href="2026-09-14.html">z 14 września 2026</a> (sprzed sprawdzania aktualizacji)
@@ -237,8 +274,10 @@ i <a href="2026-09-07.html">z 7 września 2026</a> (sprzed reklam).</p>
 <h2>In English</h2>
 
 <h3>In short</h3>
-<p>Bubble Stripes is a free game with no accounts and no sign-in. <strong>Your game progress is
-saved only on your device.</strong> The game shows <strong>rewarded ads</strong>: an ad appears only
+<p>Bubble Stripes is a free game with no accounts of its own. <strong>Your game progress is saved
+on your device.</strong> If you are signed in to <strong>Google Play Games</strong>, Google also keeps
+<strong>a copy of your progress in the cloud</strong> and your score on the <strong>players'
+leaderboard</strong> (details below). The game shows <strong>rewarded ads</strong>: an ad appears only
 when you choose to watch one for a reward (for example, a life). Ads are provided by
 <strong>Google AdMob</strong>, which collects certain device data in doing so. The game also
 collects <strong>gameplay statistics</strong> through <strong>Google Analytics for Firebase</strong>:
@@ -250,7 +289,9 @@ with your consent. Everything is described below. We run no server of our own.</
 <p>Your progress: level number, scores, records, stars, power-up stock, number of lives and the time
 the next life returns, the game's clock, daily challenge days waiting for the date check (with the moment
 each began by the phone's time-since-start counter), plus settings (sound, music, language). That file lives in the app's private
-storage on your device, is never sent to us, and is deleted entirely when you uninstall the game.</p>
+storage on your device, is never sent to us, and is deleted entirely when you uninstall the game -
+unless the Google Play Games cloud copy is on: then its copy stays in your Google account until you
+delete it (below).</p>
 
 <h3>Ads and data collected by Google AdMob</h3>
 <p>When you play with internet access, the game uses Google AdMob to load and show the ad you choose.
@@ -311,6 +352,30 @@ of the GDPR (standard contractual clauses, the EU-US Data Privacy Framework). Go
 Analytics</a> and <a href="https://firebase.google.com/support/privacy">privacy and security in
 Firebase</a>.</p>
 
+<h3>Google Play Games: leaderboard and cloud copy</h3>
+<p>The game uses <strong>Google Play Games</strong> (Google Play Games Services) to run a
+<strong>players' leaderboard</strong> and to keep <strong>a copy of your progress in Google's
+cloud</strong>: after clearing the game's data, reinstalling it or on a new phone, your career comes
+back. This works only while you are signed in to Google Play Games. When the game starts, Google signs
+you in by itself if you have a Google Play Games profile; if you do not, Google may offer to create
+one in its own window - you can decline and keep playing without the leaderboard and the cloud copy.
+The cloud copy is on by default; turn it off in the game's settings under <strong>"Cloud
+backup"</strong>. You open the leaderboard yourself, with the button on the <strong>"Points"</strong>
+screen.</p>
+<p>Data involved: your <strong>player profile</strong> (player ID, gamer name and avatar from your
+Google Play Games profile - set in Google, not in the game); your <strong>leaderboard score</strong>
+(the sum of points earned in the game, visible to other players with your gamer name, according to
+your Google Play Games profile visibility settings); the <strong>progress copy</strong> (the same
+progress file the game keeps on your device, described above, with the level number, stored in your
+Google account in the hidden app data folder of Google Drive); and <strong>analytics and
+diagnostics</strong> that the Google Play Games library collects, according to Google, to work
+reliably. Google processes this data under its own terms (<a
+href="https://policies.google.com/privacy">Google Privacy Policy</a>); it is encrypted in transit. We
+have no access to it beyond yours: the game only reads the copy of your own progress and sends its
+score. We run no server of our own. <strong>Deletion:</strong> delete your profile, scores and
+progress copies in the Google Play Games app (profile → settings → delete Play Games account and data)
+or at <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
+
 <h3>Update check</h3>
 <p>When the game starts, it asks the Google Play Store whether a newer version exists. This is done
 by Google Play's in-app updates library, which sends Google device information, the game's version
@@ -339,7 +404,7 @@ the streak once you are back online.</p>
 
 <h3>Permissions</h3>
 <p>The game uses internet and network-state access (to load an ad, send statistics, check for an
-update and check the date), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
+update, check the date and connect to Google Play Games), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
 (ad and statistics measurement, background task scheduling) also use two technical permissions:
 keeping the device awake briefly ("wake lock") and short background work ("foreground service"), to
 finish sending data. Statistics read the game's install source from the Google Play Store ("install
@@ -364,13 +429,16 @@ We never pass these addresses to anyone.</p>
 processing and to data portability, and you can withdraw consent at any time (game menu, "Ad
 privacy"); withdrawal does not affect what was collected before. Statistics contain nothing we could
 recognise you by, so we are usually unable to point to "your" data; the simplest route is to clear
-the game's data or uninstall it. For anything about your data, write to us (address below). You may
+the game's data or uninstall it. Google Play Games data (profile, scores, progress copies) you delete
+yourself, in the Google Play Games app or in your Google account (above). For anything about your
+data, write to us (address below). You may
 also lodge a complaint with a data protection authority - in Poland, the President of the Personal
 Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
 <strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-09-25-v6.html">25 September 2026, version 6</a> (before Google Play Games),
 <a href="2026-09-25.html">25 September 2026, version 5</a> (before the rating request),
 <a href="2026-09-22.html">22 September 2026</a> (before the date check),
 <a href="2026-09-15.html">15 September 2026</a> (before statistics),
