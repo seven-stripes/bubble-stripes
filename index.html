@@ -52,7 +52,7 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 2 października 2026 (wersja 7) / effective 2 October 2026 (version 7)</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 3 października 2026 (wersja 8) / effective 3 October 2026 (version 8)</p>
 </header>
 
 <main>
@@ -60,8 +60,8 @@
 <h2>Krótko</h2>
 <p>Bubble Stripes to darmowa gra bez własnych kont. <strong>Postęp gry zapisuje się na Twoim
 urządzeniu.</strong> Jeśli jesteś zalogowany do <strong>Gier Google Play</strong>, Google trzyma też
-<strong>kopię Twojego postępu w chmurze</strong> i Twój wynik w <strong>rankingu graczy</strong>
-(szczegóły niżej). Gra pokazuje <strong>reklamy nagradzane</strong>:
+<strong>kopię Twojego postępu w chmurze</strong>, Twój wynik w <strong>rankingu graczy</strong>,
+Twoje <strong>osiągnięcia</strong> i <strong>statystyki gry</strong> (szczegóły niżej). Gra pokazuje <strong>reklamy nagradzane</strong>:
 reklama pojawia się tylko wtedy, gdy sam ją wybierzesz, żeby dostać nagrodę (na przykład
 życie). Reklamy dostarcza <strong>Google AdMob</strong>, który przy tym zbiera określone dane
 o urządzeniu. Gra zbiera też <strong>statystyki rozgrywki</strong> przez usługę
@@ -73,7 +73,8 @@ opisujemy niżej. Nie mamy własnego serwera.</p>
 <h2>Co gra zapisuje na Twoim urządzeniu</h2>
 <p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych, liczbę żyć
 i czas odnowienia następnego życia, zegar gry, dni wyzwania dnia czekające na sprawdzenie daty (z chwilą
-ich rozpoczęcia według licznika czasu od włączenia telefonu), oraz ustawienia (dźwięk, muzyka, język).
+ich rozpoczęcia według licznika czasu od włączenia telefonu), liczniki osiągnięć (na przykład ile brył
+lodu rozbiłeś) oraz ustawienia (dźwięk, muzyka, język).
 Ten plik:</p>
 <ul>
   <li>znajduje się w prywatnej pamięci aplikacji na Twoim urządzeniu,</li>
@@ -128,8 +129,9 @@ imieniu.</p>
   <tr><td>Przebieg rozgrywki</td><td>rozpoczęcie i koniec poziomu (numer poziomu, tryb gry, wygrana,
   przegrana albo wyjście, powód, liczba strzałów, czas), koniec wyzwania dnia (z serią dni),
   miejsce dodane do albumu</td></tr>
-  <tr><td>Reklamy</td><td>że pojawiła się propozycja reklamy i jakiej nagrody dotyczyła, że reklama
-  została obejrzana do końca, a także wyświetlenia reklam i przychód z nich (z Google AdMob)</td></tr>
+  <tr><td>Reklamy</td><td>że pojawiła się propozycja reklamy i jakiej nagrody dotyczyła, że propozycja
+  się należała, ale żadna reklama nie była gotowa, że reklama została obejrzana do końca, a także
+  wyświetlenia reklam i przychód z nich (z Google AdMob)</td></tr>
   <tr><td>Urządzenie</td><td>model, wersja Androida, wersja gry, język</td></tr>
   <tr><td>Przybliżona lokalizacja</td><td>kraj, region i miasto wyliczone z adresu IP; samego adresu
   IP Google Analytics nie przechowuje</td></tr>
@@ -167,9 +169,10 @@ Ramy ochrony danych UE–USA). Zasady Google:
 <a href="https://support.google.com/analytics/answer/6004245">ochrona danych w Google Analytics</a>
 i <a href="https://firebase.google.com/support/privacy">prywatność i bezpieczeństwo w Firebase</a>.</p>
 
-<h2>Gry Google Play: ranking i kopia w chmurze</h2>
+<h2>Gry Google Play: ranking, osiągnięcia, statystyki i kopia w chmurze</h2>
 <p>Gra korzysta z usługi <strong>Gry Google Play</strong> (Google Play Games Services), żeby prowadzić
-<strong>ranking graczy</strong> i trzymać <strong>kopię Twojego postępu w chmurze Google</strong>: po
+<strong>ranking graczy</strong>, przyznawać <strong>osiągnięcia</strong>, liczyć <strong>statystyki gry</strong> i trzymać
+<strong>kopię Twojego postępu w chmurze Google</strong>: po
 wyczyszczeniu danych gry, ponownej instalacji albo na nowym telefonie Twoja kariera wraca. Działa to
 tylko wtedy, gdy jesteś zalogowany do Gier Google Play:</p>
 <ul>
@@ -178,7 +181,12 @@ tylko wtedy, gdy jesteś zalogowany do Gier Google Play:</p>
   rankingu i bez kopii w chmurze.</li>
   <li>Kopia w chmurze jest domyślnie włączona. Wyłączysz ją w ustawieniach gry:
   <strong>„Kopia w chmurze”</strong>. Ranking otwierasz sam, przyciskiem na ekranie
-  <strong>„Punkty”</strong>.</li>
+  <strong>„Ranking”</strong>.</li>
+  <li>Osiągnięcia zdobywasz, grając. Gra zgłasza je do Gier Google Play, gdy jesteś zalogowany, także
+  te zdobyte wcześniej. Ich listę pokazuje Google w Grach Google Play.</li>
+  <li>Po każdym ukończonym poziomie, wyzwaniu dnia i biegu trybu bez końca gra wysyła do Gier Google Play
+  krótkie zdarzenie rozgrywki (niżej), a Google liczy z nich <strong>statystyki</strong> na Twoim profilu Gier
+  Google Play, na przykład ukończone poziomy i zbite kule.</li>
 </ul>
 <table>
   <tr><th>Dane</th><th>Szczegóły</th></tr>
@@ -186,6 +194,12 @@ tylko wtedy, gdy jesteś zalogowany do Gier Google Play:</p>
   Play; ustawiasz je w Google, nie w grze</td></tr>
   <tr><td>Wynik w rankingu</td><td>suma punktów zdobytych w grze; widzą go inni gracze razem z Twoim
   pseudonimem, zgodnie z ustawieniami widoczności Twojego profilu Gier Google Play</td></tr>
+  <tr><td>Osiągnięcia</td><td>które osiągnięcia zdobyłeś i postęp w tych zdobywanych stopniowo (na
+  przykład 40 ze 101 miejsc); widzą je inni gracze zgodnie z tymi samymi ustawieniami widoczności</td></tr>
+  <tr><td>Statystyki gry</td><td>zdarzenia rozgrywki: ukończony poziom (numer, gwiazdki, liczba strzałów, zbite i
+  strącone kule, czy pomogła reklama, czy to powtórka), wyzwanie dnia (wygrane czy nie, wynik), bieg trybu bez
+  końca (wynik, strzały, czy pomogła reklama) i najdalszy ukończony poziom kariery; statystyki z nich widać na
+  Twoim profilu zgodnie z tymi samymi ustawieniami widoczności</td></tr>
   <tr><td>Kopia postępu</td><td>ten sam plik postępu, który gra trzyma na urządzeniu (opisany wyżej),
   razem z numerem poziomu; przechowywany w Twoim koncie Google, w ukrytym folderze danych aplikacji
   na Dysku Google</td></tr>
@@ -194,8 +208,8 @@ tylko wtedy, gdy jesteś zalogowany do Gier Google Play:</p>
 </table>
 <p>Dane przetwarza Google na swoich zasadach (<a href="https://policies.google.com/privacy">polityka
 prywatności Google</a>); są szyfrowane podczas przesyłania. My nie mamy do nich innego dostępu niż
-Ty: gra czyta tylko kopię Twojego własnego postępu i wysyła swój wynik. Nie mamy własnego serwera.
-<strong>Usunięcie:</strong> profil, wyniki i kopie postępu usuniesz w aplikacji Gry Google Play
+Ty: gra czyta tylko kopię Twojego własnego postępu i wysyła swój wynik, osiągnięcia i zdarzenia rozgrywki. Nie mamy własnego serwera.
+<strong>Usunięcie:</strong> profil, wyniki, osiągnięcia, statystyki i kopie postępu usuniesz w aplikacji Gry Google Play
 (profil → ustawienia → usuń konto Gier Google Play i dane) albo na
 <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
 
@@ -252,14 +266,15 @@ adresu: napisz na ten sam adres, robimy to od ręki. Nie przekazujemy tych adres
 i sprzeciwu. Zgodę możesz wycofać w każdej chwili (menu gry, „Prywatność reklam”); wycofanie nie
 zmienia tego, co zebrano wcześniej. Statystyki nie zawierają nic, po czym moglibyśmy Cię rozpoznać,
 więc zwykle nie potrafimy wskazać „Twoich” danych; najprostsza droga to usunięcie danych gry albo jej
-odinstalowanie. Dane Gier Google Play (profil, wyniki, kopie postępu) usuwasz sam, w aplikacji Gry
+odinstalowanie. Dane Gier Google Play (profil, wyniki, osiągnięcia, statystyki, kopie postępu) usuwasz sam, w aplikacji Gry
 Google Play albo na koncie Google (wyżej). W sprawie swoich danych napisz do nas (adres niżej). Możesz też złożyć skargę do
 Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-09-25-v6.html">z 25 września 2026, wersja 6</a> (sprzed Gier Google Play),
+dostępne: <a href="2026-10-02.html">z 2 października 2026, wersja 7</a> (sprzed osiągnięć i statystyk),
+<a href="2026-09-25-v6.html">z 25 września 2026, wersja 6</a> (sprzed Gier Google Play),
 <a href="2026-09-25.html">z 25 września 2026, wersja 5</a> (sprzed prośby o ocenę),
 <a href="2026-09-22.html">z 22 września 2026</a> (sprzed sprawdzania daty),
 <a href="2026-09-15.html">z 15 września 2026</a> (sprzed statystyk),
@@ -276,8 +291,8 @@ i <a href="2026-09-07.html">z 7 września 2026</a> (sprzed reklam).</p>
 <h3>In short</h3>
 <p>Bubble Stripes is a free game with no accounts of its own. <strong>Your game progress is saved
 on your device.</strong> If you are signed in to <strong>Google Play Games</strong>, Google also keeps
-<strong>a copy of your progress in the cloud</strong> and your score on the <strong>players'
-leaderboard</strong> (details below). The game shows <strong>rewarded ads</strong>: an ad appears only
+<strong>a copy of your progress in the cloud</strong>, your score on the <strong>players'
+leaderboard</strong>, your <strong>achievements</strong> and your <strong>game stats</strong> (details below). The game shows <strong>rewarded ads</strong>: an ad appears only
 when you choose to watch one for a reward (for example, a life). Ads are provided by
 <strong>Google AdMob</strong>, which collects certain device data in doing so. The game also
 collects <strong>gameplay statistics</strong> through <strong>Google Analytics for Firebase</strong>:
@@ -288,7 +303,8 @@ with your consent. Everything is described below. We run no server of our own.</
 <h3>What the game saves on your device</h3>
 <p>Your progress: level number, scores, records, stars, power-up stock, number of lives and the time
 the next life returns, the game's clock, daily challenge days waiting for the date check (with the moment
-each began by the phone's time-since-start counter), plus settings (sound, music, language). That file lives in the app's private
+each began by the phone's time-since-start counter), counters for achievements (for example how many
+ice blocks you have broken), plus settings (sound, music, language). That file lives in the app's private
 storage on your device, is never sent to us, and is deleted entirely when you uninstall the game -
 unless the Google Play Games cloud copy is on: then its copy stays in your Google account until you
 delete it (below).</p>
@@ -325,8 +341,8 @@ launch; not the advertising ID or any phone number; gone when you uninstall the 
 data), <strong>launches and play time</strong> (first launch, sessions, game updates),
 <strong>gameplay</strong> (start and end of a level with level number, game mode, won, lost or left,
 reason, number of shots and time; end of the daily challenge with the day streak; a place added to
-the album), <strong>ads</strong> (that an ad offer appeared and for which reward, that an ad was
-watched to the end, plus ad impressions and their revenue from Google AdMob),
+the album), <strong>ads</strong> (that an ad offer appeared and for which reward, that an offer was due
+but no ad was ready, that an ad was watched to the end, plus ad impressions and their revenue from Google AdMob),
 <strong>device</strong> (model, Android version, game version, language),
 <strong>approximate location</strong> (country, region and city derived from the IP address; Google
 Analytics does not store the IP address itself) and the <strong>install source</strong> (how the game
@@ -352,27 +368,37 @@ of the GDPR (standard contractual clauses, the EU-US Data Privacy Framework). Go
 Analytics</a> and <a href="https://firebase.google.com/support/privacy">privacy and security in
 Firebase</a>.</p>
 
-<h3>Google Play Games: leaderboard and cloud copy</h3>
+<h3>Google Play Games: leaderboard, achievements, stats and cloud copy</h3>
 <p>The game uses <strong>Google Play Games</strong> (Google Play Games Services) to run a
-<strong>players' leaderboard</strong> and to keep <strong>a copy of your progress in Google's
+<strong>players' leaderboard</strong>, to award <strong>achievements</strong>, to count <strong>game stats</strong> and to keep <strong>a copy of your progress in Google's
 cloud</strong>: after clearing the game's data, reinstalling it or on a new phone, your career comes
 back. This works only while you are signed in to Google Play Games. When the game starts, Google signs
 you in by itself if you have a Google Play Games profile; if you do not, Google may offer to create
 one in its own window - you can decline and keep playing without the leaderboard and the cloud copy.
 The cloud copy is on by default; turn it off in the game's settings under <strong>"Cloud
-backup"</strong>. You open the leaderboard yourself, with the button on the <strong>"Points"</strong>
-screen.</p>
+backup"</strong>. You open the leaderboard yourself, with the button on the <strong>"Leaderboard"</strong>
+screen. You earn achievements by playing; the game reports them to Google Play Games while you are
+signed in, including those earned earlier. Google shows their list in Google Play Games. After every level
+completed, daily challenge and endless run the game sends Google Play Games a short gameplay event (below), from
+which Google counts the <strong>stats</strong> on your Google Play Games profile, such as levels completed and
+bubbles popped.</p>
 <p>Data involved: your <strong>player profile</strong> (player ID, gamer name and avatar from your
 Google Play Games profile - set in Google, not in the game); your <strong>leaderboard score</strong>
 (the sum of points earned in the game, visible to other players with your gamer name, according to
-your Google Play Games profile visibility settings); the <strong>progress copy</strong> (the same
+your Google Play Games profile visibility settings); your <strong>achievements</strong> (which ones
+you have earned and your progress in those earned step by step, e.g. 40 of 101 places, visible to other
+players according to the same settings); your <strong>game stats</strong> (gameplay events: a level completed with
+its number, stars, shots, bubbles popped and dropped, whether an ad helped and whether it was a replay; a daily
+challenge, won or not, with its score; an endless run with its score, shots and whether an ad helped; the furthest
+career level completed - the stats counted from them are visible according to the same settings); the
+<strong>progress copy</strong> (the same
 progress file the game keeps on your device, described above, with the level number, stored in your
 Google account in the hidden app data folder of Google Drive); and <strong>analytics and
 diagnostics</strong> that the Google Play Games library collects, according to Google, to work
 reliably. Google processes this data under its own terms (<a
 href="https://policies.google.com/privacy">Google Privacy Policy</a>); it is encrypted in transit. We
 have no access to it beyond yours: the game only reads the copy of your own progress and sends its
-score. We run no server of our own. <strong>Deletion:</strong> delete your profile, scores and
+score, achievements and gameplay events. We run no server of our own. <strong>Deletion:</strong> delete your profile, scores, achievements, stats and
 progress copies in the Google Play Games app (profile → settings → delete Play Games account and data)
 or at <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
 
@@ -429,7 +455,7 @@ We never pass these addresses to anyone.</p>
 processing and to data portability, and you can withdraw consent at any time (game menu, "Ad
 privacy"); withdrawal does not affect what was collected before. Statistics contain nothing we could
 recognise you by, so we are usually unable to point to "your" data; the simplest route is to clear
-the game's data or uninstall it. Google Play Games data (profile, scores, progress copies) you delete
+the game's data or uninstall it. Google Play Games data (profile, scores, achievements, stats, progress copies) you delete
 yourself, in the Google Play Games app or in your Google account (above). For anything about your
 data, write to us (address below). You may
 also lodge a complaint with a data protection authority - in Poland, the President of the Personal
@@ -438,6 +464,7 @@ Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
 <strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-10-02.html">2 October 2026, version 7</a> (before achievements and stats),
 <a href="2026-09-25-v6.html">25 September 2026, version 6</a> (before Google Play Games),
 <a href="2026-09-25.html">25 September 2026, version 5</a> (before the rating request),
 <a href="2026-09-22.html">22 September 2026</a> (before the date check),
