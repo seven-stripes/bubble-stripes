@@ -3,12 +3,14 @@
 This repository exists for one reason: Google Play requires every app to
 publish a privacy policy at a public URL.
 
-`index.html` is the current policy (from 3 October 2026, version 8: Google
-Play Games - the players' leaderboard, achievements, gameplay statistics and
-a copy of the progress in Google's cloud - plus the in-app rating request,
-the date check, gameplay statistics by Google Analytics for Firebase, rewarded
-ads by Google AdMob and the in-app update check by Google Play).
-`2026-10-02.html` is the previous one (version 7), from before achievements
+`index.html` is the current policy (from 7 October 2026, version 9: the
+game's own backup copies of the save and Android's backup; Google Play Games -
+the players' leaderboard, achievements, gameplay statistics and a copy of the
+progress in Google's cloud - plus the in-app rating request, the date check,
+gameplay statistics by Google Analytics for Firebase, rewarded ads by Google
+AdMob and the in-app update check by Google Play).
+`2026-10-03.html` is the previous one (version 8), from before the sentence on
+backup copies, `2026-10-02.html` the one before it (version 7), from before achievements
 and Google Play Games statistics, `2026-09-25-v6.html` the one from before
 Google Play Games (version 6), `2026-09-25.html` the one from
 before the rating request (version 5), `2026-09-22.html` the one from before
