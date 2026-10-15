@@ -3,15 +3,18 @@
 This repository exists for one reason: Google Play requires every app to
 publish a privacy policy at a public URL.
 
-`index.html` is the current policy (from 14 October 2026, version 11: the
-events Firebase collects by itself - Android updates, clearing the game's
+`index.html` is the current policy (from 15 October 2026, version 12: how
+soon the game started after an update and through which way the update
+came, in the statistics; the events Firebase collects by itself - Android updates, clearing the game's
 data, uninstalling; the in-app update in one Google window and its stages in the statistics; the
 game's own backup copies of the save and Android's backup; Google Play Games -
 the players' leaderboard, achievements, gameplay statistics and a copy of the
 progress in Google's cloud - plus the in-app rating request, the date check,
 gameplay statistics by Google Analytics for Firebase, rewarded ads by Google
 AdMob and the in-app update check by Google Play).
-`2026-10-13.html` is the previous one (version 10), from before the events
+`2026-10-14.html` is the previous one (version 11), from before the game's
+start time after an update in the statistics, `2026-10-13.html` the one
+before it (version 10), from before the events
 Firebase collects by itself, `2026-10-07.html` the one before it (version 9),
 from before the in-app update in one Google window, `2026-10-03.html`
 (version 8) the one from before the sentence on backup copies, `2026-10-02.html` (version 7) the
