@@ -52,7 +52,7 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 15 października 2026 (wersja 12) / effective 15 October 2026 (version 12)</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 21 października 2026 (wersja 13) / effective 21 October 2026 (version 13)</p>
 </header>
 
 <main>
@@ -67,8 +67,10 @@ reklama pojawia się tylko wtedy, gdy sam ją wybierzesz, żeby dostać nagrodę
 o urządzeniu. Gra zbiera też <strong>statystyki rozgrywki</strong> przez usługę
 <strong>Google Analytics dla Firebase</strong>: ile osób wraca do gry, które poziomy są za trudne,
 ile propozycji reklamy kończy się obejrzeniem. Statystyki nie zawierają Twojego imienia, adresu
-e-mail ani identyfikatora reklamowego, a w Europie zbieramy je tylko za Twoją zgodą. Wszystko
-opisujemy niżej. Nie mamy własnego serwera.</p>
+e-mail ani identyfikatora reklamowego, a w Europie zbieramy je tylko za Twoją zgodą. Gdy w grze
+wystąpi błąd, gra wysyła <strong>raport o awarii</strong> przez <strong>Firebase Crashlytics</strong>,
+żebyśmy mogli go poprawić; w Europie też tylko za Twoją zgodą. Wszystko opisujemy niżej. Nie mamy
+własnego serwera.</p>
 
 <h2>Co gra zapisuje na Twoim urządzeniu</h2>
 <p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych, liczbę żyć
@@ -136,10 +138,12 @@ imieniu.</p>
   jej zainstalowania gra się uruchomiła i czy aktualizacja przyszła przez okno Google w grze, czy ze
   Sklepu Play</td></tr>
   <tr><td>Przebieg rozgrywki</td><td>rozpoczęcie i koniec poziomu (numer poziomu, tryb gry, wygrana,
-  przegrana albo wyjście, powód, liczba strzałów, czas), koniec wyzwania dnia (z serią dni),
-  miejsce dodane do albumu</td></tr>
+  przegrana albo wyjście, powód, liczba strzałów, czas, która to próba tego poziomu, po ilu
+  sekundach od pokazania planszy padł pierwszy strzał), poziom przerwany zamknięciem gry, kroki
+  samouczka na pierwszym poziomie, koniec wyzwania dnia (z serią dni), miejsce dodane do albumu</td></tr>
   <tr><td>Reklamy</td><td>że pojawiła się propozycja reklamy i jakiej nagrody dotyczyła, że propozycja
-  się należała, ale żadna reklama nie była gotowa, że reklama została obejrzana do końca, a także
+  się należała, ale żadna reklama nie była gotowa, że gracz ją przyjął, że reklama została obejrzana
+  do końca, a także
   wyświetlenia reklam i przychód z nich (z Google AdMob)</td></tr>
   <tr><td>Urządzenie</td><td>model, wersja Androida, wersja gry, język</td></tr>
   <tr><td>Przybliżona lokalizacja</td><td>kraj, region i miasto wyliczone z adresu IP; samego adresu
@@ -177,6 +181,34 @@ Obszarem Gospodarczym, na podstawie zabezpieczeń przewidzianych w RODO (standar
 Ramy ochrony danych UE–USA). Zasady Google:
 <a href="https://support.google.com/analytics/answer/6004245">ochrona danych w Google Analytics</a>
 i <a href="https://firebase.google.com/support/privacy">prywatność i bezpieczeństwo w Firebase</a>.</p>
+
+<h2>Raporty o awariach (Firebase Crashlytics)</h2>
+<p>Gdy w grze wystąpi błąd albo gra się zamknie przez awarię, gra wysyła raport o tym do usługi
+Firebase Crashlytics. Dzięki temu poprawiamy błędy, które zdarzają się na telefonach graczy. Robimy
+to my, Seven Stripes; Google przetwarza te dane w naszym imieniu.</p>
+<table>
+  <tr><th>Co</th><th>Szczegóły</th></tr>
+  <tr><td>Przebieg błędu</td><td>w którym miejscu kodu gry wystąpił błąd i jaki to był błąd (tzw.
+  ślad stosu), czas awarii oraz ostatnie zdarzenia statystyk gry przed nią (opisane wyżej)</td></tr>
+  <tr><td>Urządzenie i gra</td><td>model telefonu, wersja Androida, wersja gry, wolna pamięć i
+  miejsce na dysku, orientacja ekranu</td></tr>
+  <tr><td>Losowe identyfikatory instalacji</td><td>identyfikator instalacji Crashlytics i
+  identyfikator instalacji Firebase — po to, żeby policzyć, ilu graczy dotyka dany błąd; to nie jest
+  identyfikator reklamowy ani numer telefonu; znikają po odinstalowaniu gry albo wyczyszczeniu jej
+  danych</td></tr>
+  <tr><td>Sesje gry</td><td>krótka informacja o każdym uruchomieniu gry (bez przebiegu rozgrywki), żeby
+  policzyć, jaka część uruchomień kończy się awarią</td></tr>
+</table>
+<p>Raport nie zawiera Twojego imienia, adresu e-mail, identyfikatora reklamowego, lokalizacji ani
+niczego, co wpisujesz. W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii raporty
+wysyłamy <strong>tylko za Twoją zgodą</strong> (art. 6 ust. 1 lit. a RODO) — tą samą, którą wyrażasz w
+formularzu Google przy pierwszym uruchomieniu (zgoda na przechowywanie informacji na urządzeniu i
+dostęp do nich). Bez zgody gra nie wysyła żadnego raportu, także o awarii samej aplikacji. Poza tymi
+krajami raporty działają tak jak statystyki: od pierwszego uruchomienia, gdy telefon potwierdza, że
+jest poza nimi. Zgodę zmienisz albo wycofasz w każdej chwili: <strong>„Prywatność reklam”</strong> w
+ustawieniach gry; od wycofania gra nie wysyła raportów. Google przechowuje raporty i związane z nimi identyfikatory <strong>90
+dni</strong>, potem je usuwa; może je przetwarzać także poza Europejskim Obszarem Gospodarczym, na tych
+samych zasadach co statystyki. Bez internetu raport czeka w telefonie do powrotu sieci.</p>
 
 <h2>Gry Google Play: ranking, osiągnięcia, statystyki i kopia w chmurze</h2>
 <p>Gra korzysta z usługi <strong>Gry Google Play</strong> (Google Play Games Services), żeby prowadzić
@@ -251,8 +283,8 @@ internetu gra liczy czas sama, na własnym zegarze, a dni wyzwania zagrane offli
 po powrocie do sieci.</p>
 
 <h2>Uprawnienia</h2>
-<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki,
-sprawdzić, czy jest aktualizacja, sprawdzić datę oraz połączyć się z Grami Google Play), z identyfikatora reklamowego oraz z systemowych usług
+<p>Gra korzysta z dostępu do internetu i stanu sieci (żeby pobrać reklamę, wysłać statystyki i
+raporty o awariach, sprawdzić, czy jest aktualizacja, sprawdzić datę oraz połączyć się z Grami Google Play), z identyfikatora reklamowego oraz z systemowych usług
 reklamowych Androida (tematy reklam, pomiar skuteczności reklam). Biblioteki Google (pomiar reklam
 i statystyk, planowanie zadań w tle) korzystają też z dwóch uprawnień technicznych: podtrzymania
 działania urządzenia na chwilę („wake lock”) i krótkich zadań w tle („foreground service”), żeby
@@ -276,8 +308,8 @@ adresu: napisz na ten sam adres, robimy to od ręki. Nie przekazujemy tych adres
 <h2>Twoje prawa</h2>
 <p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia
 i sprzeciwu. Zgodę możesz wycofać w każdej chwili (menu gry, „Prywatność reklam”); wycofanie nie
-zmienia tego, co zebrano wcześniej. Statystyki nie zawierają nic, po czym moglibyśmy Cię rozpoznać,
-więc zwykle nie potrafimy wskazać „Twoich” danych; najprostsza droga to usunięcie danych gry albo jej
+zmienia tego, co zebrano wcześniej. Statystyki nie zawierają nic, po czym moglibyśmy Cię rozpoznać
+(tak samo raporty o awariach), więc zwykle nie potrafimy wskazać „Twoich” danych; najprostsza droga to usunięcie danych gry albo jej
 odinstalowanie. Dane Gier Google Play (profil, wyniki, osiągnięcia, statystyki, kopie postępu) usuwasz sam, w aplikacji Gry
 Google Play albo na koncie Google (wyżej). W sprawie swoich danych napisz do nas (adres niżej). Możesz też złożyć skargę do
 Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
@@ -285,7 +317,8 @@ Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-10-14.html">z 14 października 2026, wersja 11</a> (bez czasu uruchomienia gry po aktualizacji w statystykach),
+dostępne: <a href="2026-10-15.html">z 15 października 2026, wersja 12</a> (bez raportów awarii i bez prób, porzuceń i kroków samouczka w statystykach),
+<a href="2026-10-14.html">z 14 października 2026, wersja 11</a> (bez czasu uruchomienia gry po aktualizacji w statystykach),
 <a href="2026-10-13.html">z 13 października 2026, wersja 10</a> (bez zdarzeń, które Firebase zbiera sam: aktualizacji Androida, wyczyszczenia danych, odinstalowania),
 <a href="2026-10-07.html">z 7 października 2026, wersja 9</a> (sprzed aktualizacji w jednym oknie Google),
 <a href="2026-10-03.html">z 3 października 2026, wersja 8</a> (bez zdania o kopiach zapasowych),
@@ -314,6 +347,8 @@ when you choose to watch one for a reward (for example, a life). Ads are provide
 collects <strong>gameplay statistics</strong> through <strong>Google Analytics for Firebase</strong>:
 how many people come back, which levels are too hard, how many ad offers end in a watched ad. The
 statistics contain no name, email address or advertising ID, and in Europe we collect them only
+with your consent. When an error happens in the game, the game sends a <strong>crash
+report</strong> through <strong>Firebase Crashlytics</strong>, so that we can fix it; in Europe also only
 with your consent. Everything is described below. We run no server of our own.</p>
 
 <h3>What the game saves on your device</h3>
@@ -365,9 +400,12 @@ the version in the Play Store; on the first start after an update also how many 
 install the game started and whether the update came through Google's window in the game or from
 the Play Store),
 <strong>gameplay</strong> (start and end of a level with level number, game mode, won, lost or left,
-reason, number of shots and time; end of the daily challenge with the day streak; a place added to
-the album), <strong>ads</strong> (that an ad offer appeared and for which reward, that an offer was due
-but no ad was ready, that an ad was watched to the end, plus ad impressions and their revenue from Google AdMob),
+reason, number of shots and time, which attempt at the level it was, how many seconds after the
+board appeared the first shot came; a level interrupted by closing the game; the tutorial steps of the
+first level; end of the daily challenge with the day streak; a place added to the album),
+<strong>ads</strong> (that an ad offer appeared and for which reward, that an offer was due but no ad
+was ready, that the player took it, that an ad was watched to the end, plus ad impressions and their
+revenue from Google AdMob),
 <strong>device</strong> (model, Android version, game version, language),
 <strong>approximate location</strong> (country, region and city derived from the IP address; Google
 Analytics does not store the IP address itself) and the <strong>install source</strong> (how the game
@@ -392,6 +430,34 @@ of the GDPR (standard contractual clauses, the EU-US Data Privacy Framework). Go
 <a href="https://support.google.com/analytics/answer/6004245">safeguarding your data in Google
 Analytics</a> and <a href="https://firebase.google.com/support/privacy">privacy and security in
 Firebase</a>.</p>
+
+<h3>Crash reports (Firebase Crashlytics)</h3>
+<p>When an error happens in the game, or the game closes because of a crash, the game sends a report
+of it to Firebase Crashlytics, so that we can fix errors that happen on players' phones. We, Seven
+Stripes, do this; Google processes the data on our behalf.</p>
+<table>
+  <tr><th>What</th><th>Details</th></tr>
+  <tr><td>The course of the error</td><td>where in the game's code the error happened and what it
+  was (the stack trace), the time of the crash and the last game statistics events before it
+  (described above)</td></tr>
+  <tr><td>Device and game</td><td>phone model, Android version, game version, free memory and disk
+  space, screen orientation</td></tr>
+  <tr><td>Random installation IDs</td><td>the Crashlytics installation ID and the Firebase
+  installation ID — to count how many players an error affects; they are not the advertising ID or a
+  phone number; they disappear when you uninstall the game or clear its data</td></tr>
+  <tr><td>Game sessions</td><td>a short note of each launch of the game (no gameplay), to count what
+  share of launches ends in a crash</td></tr>
+</table>
+<p>A report contains no name, e-mail address, advertising ID, location or anything you type. We send
+In the European Economic Area, the UK and Switzerland we send reports <strong>only with your
+consent</strong> (Article 6(1)(a) GDPR) — the one you give in Google's form on first launch (consent to
+storing and accessing information on the device). Without it the game sends no report, not even of a
+crash of the app itself. Outside these countries reports work as the statistics do: from the first
+launch, when the phone confirms it is outside them. You can change or withdraw your consent at any
+time: <strong>“Ad privacy”</strong> in the game's settings; from then on the game sends no reports. Google keeps the reports and
+the identifiers that come with them for <strong>90 days</strong>, then deletes them; it may also
+process them outside the European Economic Area, under the same terms as the statistics. Offline, a
+report waits on the phone until the network is back.</p>
 
 <h3>Google Play Games: leaderboard, achievements, stats and cloud copy</h3>
 <p>The game uses <strong>Google Play Games</strong> (Google Play Games Services) to run a
@@ -457,7 +523,7 @@ Offline, the game keeps time on its own clock, and daily challenge days played o
 the streak once you are back online.</p>
 
 <h3>Permissions</h3>
-<p>The game uses internet and network-state access (to load an ad, send statistics, check for an
+<p>The game uses internet and network-state access (to load an ad, send statistics and crash reports, check for an
 update, check the date and connect to Google Play Games), the advertising ID and Android's ad services (ad topics, ad measurement). Google's libraries
 (ad and statistics measurement, background task scheduling) also use two technical permissions:
 keeping the device awake briefly ("wake lock") and short background work ("foreground service"), to
@@ -482,7 +548,7 @@ We never pass these addresses to anyone.</p>
 <p>You have the right to access, rectify and erase your data, to restrict and object to its
 processing and to data portability, and you can withdraw consent at any time (game menu, "Ad
 privacy"); withdrawal does not affect what was collected before. Statistics contain nothing we could
-recognise you by, so we are usually unable to point to "your" data; the simplest route is to clear
+recognise you by (nor do the crash reports), so we are usually unable to point to "your" data; the simplest route is to clear
 the game's data or uninstall it. Google Play Games data (profile, scores, achievements, stats, progress copies) you delete
 yourself, in the Google Play Games app or in your Google account (above). For anything about your
 data, write to us (address below). You may
@@ -492,6 +558,7 @@ Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
 <strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-10-15.html">15 October 2026, version 12</a> (without crash reports, and without attempts, interrupted levels and tutorial steps in the statistics),
 <a href="2026-10-14.html">14 October 2026, version 11</a> (without the game's start time after an update in the statistics),
 <a href="2026-10-13.html">13 October 2026, version 10</a> (without the events Firebase collects by itself: Android updates, clearing the data, uninstalling),
 <a href="2026-10-07.html">7 October 2026, version 9</a> (before the in-app update in one Google window),
