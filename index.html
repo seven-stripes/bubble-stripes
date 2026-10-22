@@ -52,7 +52,7 @@
 <header>
   <h1>Bubble Stripes</h1>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 22 października 2026 (wersja 14) / effective 22 October 2026 (version 14)</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 22 października 2026 (wersja 15) / effective 22 October 2026 (version 15)</p>
 </header>
 
 <main>
@@ -63,9 +63,10 @@ urządzeniu.</strong> Jeśli jesteś zalogowany do <strong>Gier Google Play</str
 <strong>kopię Twojego postępu w chmurze</strong>, Twój wynik w <strong>rankingu graczy</strong>,
 Twoje <strong>osiągnięcia</strong> i <strong>statystyki gry</strong> (szczegóły niżej). Gra pokazuje
 reklamy na dwa sposoby: <strong>reklamę nagradzaną</strong>, którą wybierasz sam, żeby dostać nagrodę
-(na przykład życie), oraz <strong>reklamę pełnoekranową po wygranym poziomie</strong> — od
-dziesiątego poziomu, nie częściej niż co 5 minut i najwyżej 3 razy podczas jednego posiedzenia z
-grą. Reklamy dostarcza <strong>Google AdMob</strong>, który przy tym zbiera określone dane
+(na przykład dodatkowe ruchy), oraz <strong>reklamę pełnoekranową po wygranym poziomie</strong> —
+najwcześniej od dziesiątego poziomu (od wersji 1.6.0: od czternastego i nigdy podczas pierwszego
+posiedzenia z grą po jej zainstalowaniu), nie częściej niż co 5 minut i najwyżej 3 razy podczas
+jednego posiedzenia z grą. Reklamy dostarcza <strong>Google AdMob</strong>, który przy tym zbiera określone dane
 o urządzeniu. Gra zbiera też <strong>statystyki rozgrywki</strong> przez usługę
 <strong>Google Analytics dla Firebase</strong>: ile osób wraca do gry, które poziomy są za trudne,
 ile propozycji reklamy kończy się obejrzeniem. Statystyki nie zawierają Twojego imienia, adresu
@@ -75,8 +76,9 @@ wystąpi błąd, gra wysyła <strong>raport o awarii</strong> przez <strong>Fire
 własnego serwera.</p>
 
 <h2>Co gra zapisuje na Twoim urządzeniu</h2>
-<p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych, liczbę żyć
-i czas odnowienia następnego życia, zegar gry, dni wyzwania dnia czekające na sprawdzenie daty (z chwilą
+<p>Postęp rozgrywki: numer poziomu, wyniki, rekordy, gwiazdki, zapas kul specjalnych (w wersjach
+przed 1.6.0 także liczbę żyć i czas odnowienia następnego życia; od 1.6.0 te pola zostają w zapisie,
+ale gra ich nie używa), zegar gry, dni wyzwania dnia czekające na sprawdzenie daty (z chwilą
 ich rozpoczęcia według licznika czasu od włączenia telefonu), liczniki osiągnięć (na przykład ile brył
 lodu rozbiłeś) oraz ustawienia (dźwięk, muzyka, język).
 Obok gra trzyma kilka kopii zapasowych tego
@@ -96,8 +98,10 @@ ustawieniach telefonu.</p>
 reklamę. Gra pokazuje dwa rodzaje reklam:</p>
 <ul>
   <li><strong>reklamę nagradzaną</strong> — tylko wtedy, gdy sam ją wybierzesz, żeby dostać nagrodę
-  (na przykład życie). Nagrodę dostajesz wyłącznie za reklamę obejrzaną do końca;</li>
-  <li><strong>reklamę pełnoekranową po wygranym poziomie</strong> — nigdy przed dziesiątym poziomem,
+  (na przykład dodatkowe ruchy). Nagrodę dostajesz wyłącznie za reklamę obejrzaną do końca;</li>
+  <li><strong>reklamę pełnoekranową po wygranym poziomie</strong> — nigdy przed dziesiątym poziomem
+  (od wersji 1.6.0: nigdy przed czternastym i nigdy podczas pierwszego posiedzenia z grą po jej
+  zainstalowaniu),
   nigdy wcześniej niż 5 minut po poprzedniej i 5 minut po reklamie nagradzanej, najwyżej 3 razy
   podczas jednego posiedzenia z grą, nigdy po przegranej, w trybie bez końca, po Wyzwaniu dnia ani po
   samouczku, nigdy przy uruchamianiu ani zamykaniu gry.</li>
@@ -152,7 +156,9 @@ imieniu.</p>
   <tr><td>Przebieg rozgrywki</td><td>rozpoczęcie i koniec poziomu (numer poziomu, tryb gry, wygrana,
   przegrana albo wyjście, powód, liczba strzałów, czas, która to próba tego poziomu, po ilu
   sekundach od pokazania planszy padł pierwszy strzał), poziom przerwany zamknięciem gry, kroki
-  samouczka na pierwszym poziomie, koniec wyzwania dnia (z serią dni), miejsce dodane do albumu</td></tr>
+  samouczka na pierwszym poziomie, pomoc po trzech porażkach z rzędu (od wersji 1.6.0; numer poziomu
+  i próby), koniec
+  wyzwania dnia (z serią dni), miejsce dodane do albumu</td></tr>
   <tr><td>Reklamy</td><td>że pojawiła się propozycja reklamy i jakiej nagrody dotyczyła, że propozycja
   się należała, ale żadna reklama nie była gotowa, że gracz ją przyjął, że reklama została obejrzana
   do końca, a także
@@ -287,7 +293,8 @@ opinia o grze, widoczna publicznie (w wersji testowej — tylko dla nas), na zas
 internetu, a także w grze zainstalowanej spoza Sklepu Play, okienko się nie pokazuje.</p>
 
 <h2>Sprawdzanie daty</h2>
-<p>Żeby seria dni w wyzwaniu dnia i odnawianie żyć były uczciwe, gra nie wierzy dacie ustawionej
+<p>Żeby seria dni w wyzwaniu dnia i jej darmowy ratunek raz w tygodniu (od wersji 1.6.0), a w wersjach
+przed 1.6.0 także odnawianie żyć, były uczciwe, gra nie wierzy dacie ustawionej
 w telefonie. Gdy jest internet, pyta serwer Google (www.google.com) o aktualną datę i godzinę: wysyła
 puste zapytanie i czyta z odpowiedzi wyłącznie datę. Nie przesyła żadnych danych z gry ani
 identyfikatorów; jak przy każdym połączeniu z internetem, serwer widzi adres IP urządzenia. Bez
@@ -329,7 +336,8 @@ Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-10-21.html">z 21 października 2026, wersja 13</a> (bez reklamy pełnoekranowej po wygranym poziomie),
+dostępne: <a href="2026-10-22.html">z 22 października 2026, wersja 14</a> (bez opisu wersji 1.6.0: gry bez żyć, reklamy pełnoekranowej od czternastego poziomu i nigdy w pierwszym posiedzeniu, pomocy po trzech porażkach w statystykach),
+<a href="2026-10-21.html">z 21 października 2026, wersja 13</a> (bez reklamy pełnoekranowej po wygranym poziomie),
 <a href="2026-10-15.html">z 15 października 2026, wersja 12</a> (bez raportów awarii i bez prób, porzuceń i kroków samouczka w statystykach),
 <a href="2026-10-14.html">z 14 października 2026, wersja 11</a> (bez czasu uruchomienia gry po aktualizacji w statystykach),
 <a href="2026-10-13.html">z 13 października 2026, wersja 10</a> (bez zdarzeń, które Firebase zbiera sam: aktualizacji Androida, wyczyszczenia danych, odinstalowania),
@@ -356,8 +364,10 @@ on your device.</strong> If you are signed in to <strong>Google Play Games</stro
 <strong>a copy of your progress in the cloud</strong>, your score on the <strong>players'
 leaderboard</strong>, your <strong>achievements</strong> and your <strong>game stats</strong> (details below). The
 game shows ads in two ways: a <strong>rewarded ad</strong> you choose yourself to get a reward (for
-example, a life), and a <strong>full-screen ad after a won level</strong> — from the tenth level on,
-no more often than every 5 minutes and at most 3 times in one session of play. Ads are provided by
+example, extra moves), and a <strong>full-screen ad after a won level</strong> — from the tenth
+level at the earliest (from version 1.6.0: from the fourteenth, and never in the first session of
+play after installing the game), no more often than every 5 minutes and at most 3 times in one
+session of play. Ads are provided by
 <strong>Google AdMob</strong>, which collects certain device data in doing so. The game also
 collects <strong>gameplay statistics</strong> through <strong>Google Analytics for Firebase</strong>:
 how many people come back, which levels are too hard, how many ad offers end in a watched ad. The
@@ -367,8 +377,9 @@ report</strong> through <strong>Firebase Crashlytics</strong>, so that we can fi
 with your consent. Everything is described below. We run no server of our own.</p>
 
 <h3>What the game saves on your device</h3>
-<p>Your progress: level number, scores, records, stars, power-up stock, number of lives and the time
-the next life returns, the game's clock, daily challenge days waiting for the date check (with the moment
+<p>Your progress: level number, scores, records, stars, power-up stock (in versions before 1.6.0
+also the number of lives and the time the next life returns; from 1.6.0 these fields stay in the
+save, but the game does not use them), the game's clock, daily challenge days waiting for the date check (with the moment
 each began by the phone's time-since-start counter), counters for achievements (for example how many
 ice blocks you have broken), plus settings (sound, music, language). Next to it the game keeps a few
 backup copies of that file, so that a damaged file does not send your career back to the start. That
@@ -384,8 +395,10 @@ phone's settings.</p>
 shows two kinds of ads:</p>
 <ul>
   <li>a <strong>rewarded ad</strong> — only when you choose it yourself, to get a reward (for example,
-  a life). You get the reward only for an ad watched to the end;</li>
-  <li>a <strong>full-screen ad after a won level</strong> — never before the tenth level, never sooner
+  extra moves). You get the reward only for an ad watched to the end;</li>
+  <li>a <strong>full-screen ad after a won level</strong> — never before the tenth level (from version
+  1.6.0: never before the fourteenth, and never in the first session of play after installing the
+  game), never sooner
   than 5 minutes after the previous one and 5 minutes after a rewarded ad, at most 3 times in one
   session of play, never after a lost level, in the endless mode, after the Daily Challenge or the
   tutorial, never when the game starts or closes.</li>
@@ -427,7 +440,9 @@ the Play Store),
 <strong>gameplay</strong> (start and end of a level with level number, game mode, won, lost or left,
 reason, number of shots and time, which attempt at the level it was, how many seconds after the
 board appeared the first shot came; a level interrupted by closing the game; the tutorial steps of the
-first level; end of the daily challenge with the day streak; a place added to the album),
+first level; help after three losses in a row (from version 1.6.0), with the level and attempt
+number; end of the daily
+challenge with the day streak; a place added to the album),
 <strong>ads</strong> (that an ad offer appeared and for which reward, that an offer was due but no ad
 was ready, that the player took it, that an ad was watched to the end, plus ad impressions and their
 revenue from Google AdMob),
@@ -540,7 +555,8 @@ one.</strong> Offline, or in a copy of the game not installed from the Play Stor
 appear.</p>
 
 <h3>Date check</h3>
-<p>To keep the daily challenge streak and the refilling of lives fair, the game does not trust the date
+<p>To keep the daily challenge streak and its free weekly save (from version 1.6.0) fair — and, in
+versions before 1.6.0, the refilling of lives — the game does not trust the date
 set on the phone. With internet access it asks a Google server (www.google.com) for the current date
 and time: it sends an empty request and reads only the date from the answer. No game data and no
 identifiers are sent; as with any internet connection, the server sees the device's IP address.
@@ -583,6 +599,7 @@ Data Protection Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 <h3>Changes</h3>
 <p>Every change to this policy changes the date at the top of the page, and a new version is published
 <strong>before</strong> the game version it concerns is released. Earlier versions remain available:
+<a href="2026-10-22.html">22 October 2026, version 14</a> (without version 1.6.0: a game without lives, the full-screen ad from the fourteenth level and never in the first session, the help after three losses in the statistics),
 <a href="2026-10-21.html">21 October 2026, version 13</a> (without the full-screen ad after a won level),
 <a href="2026-10-15.html">15 October 2026, version 12</a> (without crash reports, and without attempts, interrupted levels and tutorial steps in the statistics),
 <a href="2026-10-14.html">14 October 2026, version 11</a> (without the game's start time after an update in the statistics),
